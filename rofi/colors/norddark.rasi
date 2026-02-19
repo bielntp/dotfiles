@@ -1,0 +1,34 @@
+/**
+ * Nord Dark – Best Themes (Custom)
+ * Paleta baseada no padrão fornecido
+ */
+
+* {
+    /* 🖤 Backgrounds */
+    background:     #131517F7;   /* background principal */
+    background-alt: #1A1B1DF7;   /* background secundário */
+    alternate-background: #1A1B1DF7;
+
+    /* 🤍 Texto */
+    foreground:     #DBDBDBFF;   /* texto principal */
+    text-color:     #DBDBDBFF;
+
+    /* Texto secundário / apagado */
+    normal-foreground:    #DBDBDBFF;
+    alternate-normal-foreground: #A2A2A2FF;
+    disabled-foreground: #4F4F4FFF;
+
+    /* 🌊 Accent */
+    selected:       #70949EFF;   /* accent principal */
+    active:         #466973FF;   /* accent hover */
+    selected-normal-background: #70949EFF;
+    selected-normal-foreground: #131517FF;
+
+    /* 🚦 Estados */
+    urgent:         #974B53FF;   /* erro */
+    urgent-foreground: #DBDBDBFF;
+
+    /* Extras úteis */
+    border-colour:  #222224FF;   /* hover / seleção leve */
+    handle-colour:  #70949EFF;
+}

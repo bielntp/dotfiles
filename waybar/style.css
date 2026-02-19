@@ -1,0 +1,98 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family:
+    /* SF Pro Display, */
+    JetBrainsMono Nerd Font;
+  font-weight: bold;
+  font-size: 12px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 0);
+  color: #dbdbdb;
+}
+
+#workspaces {
+  background: rgba(19, 21, 23, 0.9);
+  margin: 7px 10px 5px 10px;
+  padding: 0px 6px;
+  border-radius: 12px;
+}
+
+#workspaces button {
+  padding: 0px 9px;
+  color: #70949e;
+  background: transparent;
+  min-width: 20px;
+}
+
+#workspaces button:hover {
+  color: #e7cc98;
+}
+
+#workspaces button.active {
+  color: #dbdbdb;
+}
+
+#workspaces button.focused {
+  background: #70949e;
+  color: #131517;
+  border-radius: 8px;
+  margin: 3px 2px;
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#backlight,
+#power-profiles-daemon,
+#tray,
+#custom-power {
+  background: rgba(19, 21, 23, 0.96);
+  margin: 5px 6px 3px 6px;
+  padding: 7px 18px;
+  border-radius: 14px;
+  color: #dbdbdb;
+}
+
+#window {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 7px 25px;
+}
+
+#clock {
+  color: #dbdbdb;
+}
+
+#network {
+  color: #8ba0b6;
+}
+
+#pulseaudio {
+  color: #a8bc96;
+}
+
+#backlight {
+  color: #a6bbd3;
+}
+
+#battery {
+  color: #c1d4af;
+}
+
+#custom-power {
+  color: #b6676d;
+  margin-right: 15px;
+}
+
+#tray {
+  border-radius: 14px;
+  margin: 5px 10px 3px 10px;
+  padding: 7px 12px;
+  color: #dbdbdb;
+}

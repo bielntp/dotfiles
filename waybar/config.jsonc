@@ -1,0 +1,113 @@
+{
+  // "output": "eDP-1",
+  "layer": "top",
+  "position": "top",
+  "mode": "dock",
+  "height": 0,
+  "modules-left": ["clock", "hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "network",
+    "backlight",
+    "battery",
+  ],
+  "hyprland/window": {
+    "format": "󰣇 {}",
+  },
+  "hyprland/workspaces": {
+    "persistent-workspaces": {
+      "HDMI-A-1": [10],
+    },
+    "disable-scroll": true,
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
+      "default": "",
+    },
+    "sort-by-number": true,
+  },
+  "tray": {
+    "icon-size": 12,
+    "spacing": 17
+  },
+  "clock": {
+    "format": "{:%A %H:%M}",
+    "interval": 1,
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "month",
+      "format": {
+        "months": "<span color='#dbdbdb'><b>{}</b></span>",
+        "weekdays": "<span color='#dbdbdb'><b>{}</b></span>",
+        "today": "<span color='#dbdbdb'><b>{}</b></span>",
+        "days": "<span color='#8ba0b6'><b>{}</b></span>",
+      },
+    },
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}  {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "on-scroll-up": "brightnessctl set 1%+ -q",
+    "on-scroll-down": "brightnessctl set 1%- -q",
+    "min-length": 6,
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-discharging": " {capacity}% {icon}",
+    "format-charging": "{capacity}% {icon}",
+    "format-plugged": "{capacity}%    ",
+    "format-icons": {
+      "charging": [" 󱐌", " 󱐌", " 󱐌", " 󱐌", " 󱐋 "],
+      "default": ["  ", "  ", "  ", "  ", "   "]
+    },
+    "format-full": " 󱐋 ",
+    "interval": 5,
+    // "on-click": "omarchy-menu power",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    }
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format": "{icon}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰀂",
+    "format-disconnected": "󰤮",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 3,
+    "spacing": 1,
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "tooltip": false,
+    "format-muted": "  Muted",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", "", ""],
+    },
+    "on-click": "pavucontrol",
+  },
+}
